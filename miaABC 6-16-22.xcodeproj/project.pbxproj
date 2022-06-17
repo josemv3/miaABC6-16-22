@@ -19,6 +19,7 @@
 		E03D093D285C1EC400F05827 /* miaABC_6_16_22Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D093C285C1EC400F05827 /* miaABC_6_16_22Tests.swift */; };
 		E03D0947285C1EC400F05827 /* miaABC_6_16_22UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D0946285C1EC400F05827 /* miaABC_6_16_22UITests.swift */; };
 		E03D0949285C1EC400F05827 /* miaABC_6_16_22UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D0948285C1EC400F05827 /* miaABC_6_16_22UITestsLaunchTests.swift */; };
+		E0AF4512285CDDBD006AF7C0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E03D0942285C1EC400F05827 /* miaABC 6-16-22UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "miaABC 6-16-22UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03D0946285C1EC400F05827 /* miaABC_6_16_22UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miaABC_6_16_22UITests.swift; sourceTree = "<group>"; };
 		E03D0948285C1EC400F05827 /* miaABC_6_16_22UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miaABC_6_16_22UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E03D0926285C1EC200F05827 /* ViewController.swift */,
 				E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */,
 				E021CC06285C468B00BF43EA /* CollectionViewCell.swift */,
+				E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */,
 				E03D0928285C1EC200F05827 /* Main.storyboard */,
 				E03D092E285C1EC300F05827 /* Assets.xcassets */,
 				E03D0930285C1EC300F05827 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				E021CC05285C45FA00BF43EA /* CollectionViewDelegate.swift in Sources */,
 				E03D092D285C1EC200F05827 /* miaABC_6_16_22.xcdatamodeld in Sources */,
 				E03D0925285C1EC200F05827 /* SceneDelegate.swift in Sources */,
+				E0AF4512285CDDBD006AF7C0 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

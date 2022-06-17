@@ -34,6 +34,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return cell
     }
+    
+    //To populate HEADER with data
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        guard let HeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderView.reuseIdentifier, for: indexPath) as? HeaderView else {
+            fatalError("HeaderView cannot be created")
+        }
+        
+        HeaderView.headerLabel.text = "ABC GO!"
+        
+        return HeaderView
+    }
 
 }
 
