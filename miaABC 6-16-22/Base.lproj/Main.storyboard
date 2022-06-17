@@ -33,7 +33,21 @@
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LFj-Av-lkU">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxk-2Y-YVR">
+                                                    <rect key="frame" x="2" y="7" width="124" height="114"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="a"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qxk-2Y-YVR" firstAttribute="centerX" secondItem="LFj-Av-lkU" secondAttribute="centerX" id="R3T-Lt-Dq6"/>
+                                                <constraint firstItem="Qxk-2Y-YVR" firstAttribute="centerY" secondItem="LFj-Av-lkU" secondAttribute="centerY" id="xUx-mR-yWh"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellButton" destination="Qxk-2Y-YVR" id="sHP-A1-Aig"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderView" id="mZN-xr-gz6" customClass="HeaderView" customModule="miaABC_6_16_22" customModuleProvider="target">
@@ -81,6 +95,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="a" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
