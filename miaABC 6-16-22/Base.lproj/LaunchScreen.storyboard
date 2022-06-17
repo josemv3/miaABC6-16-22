@@ -37,14 +37,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="W3F-m5-ZcP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uex-Uy-J5T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="440"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="W3F-m5-ZcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="48F-tu-kWr"/>
+                            <constraint firstItem="uex-Uy-J5T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7UL-JG-8r4"/>
+                            <constraint firstItem="uex-Uy-J5T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AlZ-Xq-cHJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uex-Uy-J5T" secondAttribute="bottom" constant="378" id="FYc-7k-U0l"/>
+                            <constraint firstItem="W3F-m5-ZcP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JZy-Hn-KjC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7nl-kd-mzT" secondAttribute="trailing" constant="20" id="LAb-nW-7eQ"/>
                             <constraint firstItem="7nl-kd-mzT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OtA-RE-SDp"/>
                             <constraint firstItem="7nl-kd-mzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xma-sm-hnO"/>
+                            <constraint firstItem="uex-Uy-J5T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YV5-5A-GdX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7nl-kd-mzT" secondAttribute="bottom" constant="340" id="kX5-TR-1ap"/>
+                            <constraint firstItem="W3F-m5-ZcP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="nIo-VE-ZIs"/>
+                            <constraint firstAttribute="bottom" secondItem="W3F-m5-ZcP" secondAttribute="bottom" id="nP6-Kx-MwE"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,6 +68,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launchBackground" width="1125" height="2436"/>
+        <image name="logo" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
