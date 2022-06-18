@@ -14,7 +14,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         cViewMain.delegate = delegate
+        
     }
+    
+    let buttonImage: [String] = ["a","b","c","d","e","f","g"]
     
     let delegate = CollectionViewDelegate(numberOfItemsPerRow: 3, interItemSpacing: 10)
         
@@ -32,8 +35,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = cViewMain.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.backgroundColor = UIColor.systemRed
         
+        //cell.cellButton.imageView?.image = UIImage(named: "b")
+        //cell.cellButton.setImage(UIImage(named: "b"), for: .normal)
+        //let emoji = self.emoji.data[category]?[indexPath.item] ?? ""
+        cell.cellButton.setImage(UIImage(named: buttonImage[indexPath].row)
+        
+       
         return cell
     }
+    
+    
+    
+//    let buttonImage: [String] = ["a","b","c","d","e","f","g"]
+//
+//    func setButtonImage() {
+//        CollectionViewCell.cellButton.currentImage = UIImage(named: [0,buttonImage[cellForItemAt.indexPath]])
+//    }
     
     //To populate HEADER with data
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

@@ -10,4 +10,12 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellButton: UIButton!
+    
+    
+    
+    @IBAction func letterButtonPressed(_ sender: UIButton) {
+       
+    }
+    
 }
+
