@@ -17,7 +17,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    let buttonImage: [String] = ["a","b","c","d","e","f","g"]
+    let buttonImage: [String] = ["a","b","c","d","e","f","g","h","i"]
+    let buttonImage2: [String] = ["b","b","c","c","e","f","g","h","i"]
+    
+    
+    let headerTitle: [String] = ["ABC, DEF, GHI", "JKL, MNO, PQR"]
     
     let delegate = CollectionViewDelegate(numberOfItemsPerRow: 3, interItemSpacing: 10)
         
@@ -33,24 +37,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cViewMain.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-        cell.backgroundColor = UIColor.systemRed
+        cell.backgroundColor = UIColor(named: "mainOrange")
         
         //cell.cellButton.imageView?.image = UIImage(named: "b")
-        //cell.cellButton.setImage(UIImage(named: "b"), for: .normal)
-        //let emoji = self.emoji.data[category]?[indexPath.item] ?? ""
-        cell.cellButton.setImage(UIImage(named: buttonImage[indexPath].row)
+       cell.cellButton.setImage(UIImage(named: buttonImage[indexPath.row]), for: .normal)
+ 
         
+        cell.cellButton.setTitle(buttonImage[indexPath.row], for: .normal)
+        cell.cellButton.setTitleColor(UIColor.clear, for: .normal)
        
         return cell
     }
-    
-    
-    
-//    let buttonImage: [String] = ["a","b","c","d","e","f","g"]
-//
-//    func setButtonImage() {
-//        CollectionViewCell.cellButton.currentImage = UIImage(named: [0,buttonImage[cellForItemAt.indexPath]])
-//    }
+
     
     //To populate HEADER with data
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -59,12 +57,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             fatalError("HeaderView cannot be created")
         }
         
-        HeaderView.headerLabel.text = "ABC GO!"
+        HeaderView.headerLabel.text = headerTitle[indexPath.section]
+        //HeaderView.headerLabel.text = "ABC"
         
         return HeaderView
     }
 
 }
+
 
 
 

@@ -14,8 +14,10 @@ class CollectionViewCell: UICollectionViewCell {
     
     
     @IBAction func letterButtonPressed(_ sender: UIButton) {
+        print(cellButton.title(for: .normal) ?? "Error")
        
+    
     }
     
+    
 }
-
