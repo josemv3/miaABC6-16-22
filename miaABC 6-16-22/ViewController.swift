@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     let buttonImage: [String] = ["a","b","c","d","e","f","g","h","i"]
-    let buttonImage2: [String] = ["b","b","c","c","e","f","g","h","i"]
+    let buttonImage2: [String] = ["j","k","l","m","n","o","p","q","r"]
     
     
     let headerTitle: [String] = ["ABC, DEF, GHI", "JKL, MNO, PQR"]
@@ -40,7 +40,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.backgroundColor = UIColor(named: "mainOrange")
         
         //cell.cellButton.imageView?.image = UIImage(named: "b")
-       cell.cellButton.setImage(UIImage(named: buttonImage[indexPath.row]), for: .normal)
+        cell.cellButton.setImage(UIImage(named: buttonImage[indexPath.row]), for: .normal)
  
         
         cell.cellButton.setTitle(buttonImage[indexPath.row], for: .normal)
