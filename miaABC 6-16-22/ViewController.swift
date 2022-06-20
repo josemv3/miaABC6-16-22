@@ -39,17 +39,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = cViewMain.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.backgroundColor = UIColor(named: "mainOrange")
         
+       
+        
         if indexPath.section == 0 {
             let image = UIImage(named: buttonImage[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
-            cell.cellButton.setTitle(buttonImage[indexPath.row], for: .normal)
-            cell.cellButton.setTitleColor(.clear, for: .normal)
+//            cell.cellButton.setTitle(buttonImage[indexPath.row], for: .normal)
+//            cell.cellButton.setTitleColor(.clear, for: .normal)
+            cell.title = buttonImage[indexPath.row]
+//            cell.cellButton.contentMode = .center
+//            cell.cellButton.imageView?.contentMode = .scaleAspectFit
+            
             return cell
         } else {
             let image = UIImage(named: buttonImage2[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
-            cell.cellButton.setTitle(buttonImage2[indexPath.row], for: .normal)
-            cell.cellButton.setTitleColor(.clear, for: .normal)
+            cell.title = buttonImage2[indexPath.row]
+//            cell.cellButton.setTitle(buttonImage2[indexPath.row], for: .normal)
+//            cell.cellButton.setTitleColor(.clear, for: .normal)
             return cell
         }
         
