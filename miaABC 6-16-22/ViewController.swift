@@ -10,6 +10,10 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var cViewMain: UICollectionView!
+    @IBOutlet weak var wordImage: UIImageView!
+    @IBOutlet weak var wordButton: UIButton!
+    @IBOutlet weak var wordImageButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let buttonImage2: [String] = ["j","k","l","m","n","o","p","q","r"]
     
     
-    let headerTitle: [String] = ["ABC, DEF, GHI", "JKL, MNO, PQR"]
+    let headerTitle: [String] = ["ABCDEFGHI", "JKLMNOPQR"]
     
     let delegate = CollectionViewDelegate(numberOfItemsPerRow: 3, interItemSpacing: 10)
         
@@ -76,6 +80,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return HeaderView
     }
 
+
+    @IBAction func wordButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func wordImageButtonPressed(_ sender: UIButton) {
+    }
+    
 }
 
 
