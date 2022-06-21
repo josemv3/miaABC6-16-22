@@ -12,6 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellButton: UIButton!
     
     var title = ""
+  
     
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         print(title)

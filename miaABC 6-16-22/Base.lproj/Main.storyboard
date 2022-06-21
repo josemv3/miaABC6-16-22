@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="75q-AK-qMh">
-                                <rect key="frame" x="20" y="44" width="374" height="478"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="518"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EWI-BS-kqd">
                                     <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="65"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="YxB-QU-Vgs" customClass="CollectionViewCell" customModule="miaABC_6_16_22" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="65" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LFj-Av-lkU">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -55,12 +55,12 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderView" id="mZN-xr-gz6" customClass="HeaderView" customModule="miaABC_6_16_22" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugS-8S-NMK">
-                                            <rect key="frame" x="8" y="15" width="358" height="21"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <rect key="frame" x="8" y="15" width="398" height="36"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
                                             <color key="textColor" name="mainBlue"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -79,30 +79,19 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="uJQ-HA-1Mr"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gh9-Fh-Kty">
-                                <rect key="frame" x="107" y="551" width="200" height="200"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-T8-sHO">
-                                <rect key="frame" x="57" y="778" width="300" height="65"/>
-                                <color key="backgroundColor" name="mainBlue"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alligator" translatesAutoresizingMaskIntoConstraints="NO" id="Gh9-Fh-Kty">
+                                <rect key="frame" x="132" y="601" width="150" height="150"/>
+                                <color key="backgroundColor" name="mainOrange"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="866-r6-h2L"/>
-                                    <constraint firstAttribute="width" constant="300" id="FBW-yn-mmu"/>
+                                    <constraint firstAttribute="width" constant="150" id="aI6-Rr-DTX"/>
+                                    <constraint firstAttribute="height" constant="150" id="yb2-Ul-Bkx"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Alligator">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="wordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1R-0m-8bh"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd7-0g-UgC">
-                                <rect key="frame" x="107" y="551" width="200" height="200"/>
+                                <rect key="frame" x="132" y="601" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="KqN-bs-vL2"/>
-                                    <constraint firstAttribute="width" constant="200" id="RQq-G4-Zdu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Fc4-Xo-29T"/>
+                                    <constraint firstAttribute="height" constant="150" id="igX-Cz-G2M"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -110,24 +99,36 @@
                                     <action selector="wordImageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obE-FD-5qR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-T8-sHO">
+                                <rect key="frame" x="67" y="780" width="280" height="65"/>
+                                <color key="backgroundColor" name="mainBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="eeu-fW-Fhh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="o9G-7B-eo2"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alligator">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="wordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1R-0m-8bh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kd7-0g-UgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="1M2-ZZ-b47"/>
-                            <constraint firstItem="5Cf-T8-sHO" firstAttribute="top" secondItem="Gh9-Fh-Kty" secondAttribute="bottom" constant="27" id="72l-IY-Htf"/>
+                            <constraint firstItem="Gh9-Fh-Kty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="19X-Ra-heC"/>
+                            <constraint firstItem="Kd7-0g-UgC" firstAttribute="top" secondItem="Gh9-Fh-Kty" secondAttribute="top" id="41q-4b-IsU"/>
                             <constraint firstItem="75q-AK-qMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KG1-kr-wIC"/>
-                            <constraint firstItem="Gh9-Fh-Kty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="TOE-el-tYq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gh9-Fh-Kty" secondAttribute="trailing" constant="107" id="Vbr-AU-Y3e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kd7-0g-UgC" secondAttribute="trailing" constant="107" id="eOq-Va-1Cc"/>
-                            <constraint firstItem="Gh9-Fh-Kty" firstAttribute="top" secondItem="75q-AK-qMh" secondAttribute="bottom" constant="29" id="ekh-HK-kHI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="75q-AK-qMh" secondAttribute="trailing" constant="20" id="fMT-as-FFP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="75q-AK-qMh" secondAttribute="bottom" constant="340" id="lBR-QF-arM"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Gh9-Fh-Kty" secondAttribute="bottom" constant="111" id="m7y-Ek-K7d"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Kd7-0g-UgC" secondAttribute="bottom" constant="111" id="meF-H9-tbT"/>
-                            <constraint firstItem="75q-AK-qMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tBs-6Y-VqB"/>
-                            <constraint firstItem="5Cf-T8-sHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vgJ-5M-8mh"/>
-                            <constraint firstItem="Kd7-0g-UgC" firstAttribute="top" secondItem="75q-AK-qMh" secondAttribute="bottom" constant="29" id="xbK-Xo-sUw"/>
+                            <constraint firstItem="5Cf-T8-sHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sme-WK-Gx3"/>
+                            <constraint firstItem="Kd7-0g-UgC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMq-JU-LxU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="75q-AK-qMh" secondAttribute="trailing" id="fMT-as-FFP"/>
+                            <constraint firstItem="5Cf-T8-sHO" firstAttribute="top" secondItem="Gh9-Fh-Kty" secondAttribute="bottom" constant="29" id="fOO-5N-PpO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="75q-AK-qMh" secondAttribute="bottom" constant="300" id="lBR-QF-arM"/>
+                            <constraint firstItem="75q-AK-qMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tBs-6Y-VqB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Cf-T8-sHO" secondAttribute="bottom" constant="17" id="zmz-Iq-RVk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -144,9 +145,12 @@
     </scenes>
     <resources>
         <image name="a" width="100" height="100"/>
-        <image name="logo" width="1024" height="1024"/>
+        <image name="alligator" width="500" height="500"/>
         <namedColor name="mainBlue">
             <color red="0.28600001335144043" green="0.42699998617172241" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainOrange">
+            <color red="0.9570000171661377" green="0.83099997043609619" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
