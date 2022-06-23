@@ -42,9 +42,9 @@ func collectionView(_ collectionView: UICollectionView, layout collectionViewLay
 //Need space between section here:
 func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
     if section == 0 {
-        return UIEdgeInsets(top: 0, left: 5, bottom: 1, right: 5)
+        return UIEdgeInsets(top: 0, left: 5, bottom: 10, right: 5)
     } else {
-        return UIEdgeInsets(top: 1, left: 5, bottom: 1, right: 5)
+        return UIEdgeInsets(top: 1, left: 5, bottom: 10, right: 5)
     }
 }
 

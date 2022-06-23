@@ -20,6 +20,7 @@
 		E03D0947285C1EC400F05827 /* miaABC_6_16_22UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D0946285C1EC400F05827 /* miaABC_6_16_22UITests.swift */; };
 		E03D0949285C1EC400F05827 /* miaABC_6_16_22UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D0948285C1EC400F05827 /* miaABC_6_16_22UITestsLaunchTests.swift */; };
 		E0AF4512285CDDBD006AF7C0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */; };
+		E0E40B982864206A00796B1B /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E40B972864206A00796B1B /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E03D0946285C1EC400F05827 /* miaABC_6_16_22UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miaABC_6_16_22UITests.swift; sourceTree = "<group>"; };
 		E03D0948285C1EC400F05827 /* miaABC_6_16_22UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miaABC_6_16_22UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E0E40B972864206A00796B1B /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */,
 				E021CC06285C468B00BF43EA /* CollectionViewCell.swift */,
 				E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */,
+				E0E40B972864206A00796B1B /* FooterView.swift */,
 				E03D0928285C1EC200F05827 /* Main.storyboard */,
 				E03D092E285C1EC300F05827 /* Assets.xcassets */,
 				E03D0930285C1EC300F05827 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				E021CC07285C468B00BF43EA /* CollectionViewCell.swift in Sources */,
 				E021CC05285C45FA00BF43EA /* CollectionViewDelegate.swift in Sources */,
 				E03D092D285C1EC200F05827 /* miaABC_6_16_22.xcdatamodeld in Sources */,
+				E0E40B982864206A00796B1B /* FooterView.swift in Sources */,
 				E03D0925285C1EC200F05827 /* SceneDelegate.swift in Sources */,
 				E0AF4512285CDDBD006AF7C0 /* HeaderView.swift in Sources */,
 			);

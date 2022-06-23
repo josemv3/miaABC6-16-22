@@ -51,15 +51,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage[indexPath.row]
-            cellTitle = cell.title
-            wordImage.image = UIImage(named: "alligator")
+            //ellTitle = cell.title
+            //wordImage.image = UIImage(named: "alligator")
             
             return cell
         } else {
             let image = UIImage(named: buttonImage2[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage2[indexPath.row]
-            cellTitle = cell.title
+            //cellTitle = cell.title
 
             return cell
         }
@@ -68,6 +68,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     //To populate HEADER with data
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        if kind == UICollectionView.elementKindSectionFooter {
+            
+            guard let FooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterView.reuseIdentifier, for: indexPath) as? FooterView else {
+                fatalError("HeaderView cannot be created")
+            }
+            FooterView.backgroundColor = .systemRed
+            //FooterView.headerLabel.text = headerTitle[indexPath.section]
+            //HeaderView.headerLabel.text = "ABC"
+            
+            return FooterView
+        }
+        
         
         guard let HeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderView.reuseIdentifier, for: indexPath) as? HeaderView else {
             fatalError("HeaderView cannot be created")

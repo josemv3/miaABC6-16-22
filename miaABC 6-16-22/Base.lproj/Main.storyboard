@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="75q-AK-qMh">
-                                <rect key="frame" x="0.0" y="44" width="414" height="518"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EWI-BS-kqd">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="50" height="65"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="280"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -75,67 +75,53 @@
                                         <outlet property="headerLabel" destination="ugS-8S-NMK" id="nak-n9-ToU"/>
                                     </connections>
                                 </collectionReusableView>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterView" id="zYv-ra-Maz" customClass="FooterView" customModule="miaABC_6_16_22" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="193" width="414" height="280"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alligator" translatesAutoresizingMaskIntoConstraints="NO" id="VeY-hU-14T">
+                                            <rect key="frame" x="132" y="18" width="150" height="150"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-YS-SZ4">
+                                            <rect key="frame" x="92" y="188" width="230" height="64"/>
+                                            <color key="backgroundColor" name="mainBlue"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Alligator">
+                                                <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="35"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hd6-YS-SZ4" firstAttribute="top" secondItem="VeY-hU-14T" secondAttribute="bottom" constant="20" id="0FI-D5-0VO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VeY-hU-14T" secondAttribute="trailing" constant="124" id="1kQ-Cp-N73"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="VeY-hU-14T" secondAttribute="bottom" constant="104" id="7K8-Ua-tQN"/>
+                                        <constraint firstItem="hd6-YS-SZ4" firstAttribute="leading" secondItem="zYv-ra-Maz" secondAttribute="leadingMargin" constant="84" id="7j8-t0-XDK"/>
+                                        <constraint firstItem="hd6-YS-SZ4" firstAttribute="centerX" secondItem="zYv-ra-Maz" secondAttribute="centerX" id="8Z3-9y-Bfo"/>
+                                        <constraint firstItem="VeY-hU-14T" firstAttribute="top" secondItem="zYv-ra-Maz" secondAttribute="topMargin" constant="10" id="uXj-8H-DT1"/>
+                                        <constraint firstItem="VeY-hU-14T" firstAttribute="leading" secondItem="zYv-ra-Maz" secondAttribute="leadingMargin" constant="124" id="ykB-Z2-372"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="footerButton" destination="hd6-YS-SZ4" id="q9l-4y-sZM"/>
+                                        <outlet property="footerImage" destination="VeY-hU-14T" id="PN7-FR-27M"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="uJQ-HA-1Mr"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alligator" translatesAutoresizingMaskIntoConstraints="NO" id="Gh9-Fh-Kty">
-                                <rect key="frame" x="132" y="601" width="150" height="150"/>
-                                <color key="backgroundColor" name="mainOrange"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="aI6-Rr-DTX"/>
-                                    <constraint firstAttribute="height" constant="150" id="yb2-Ul-Bkx"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd7-0g-UgC">
-                                <rect key="frame" x="132" y="601" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Fc4-Xo-29T"/>
-                                    <constraint firstAttribute="height" constant="150" id="igX-Cz-G2M"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="wordImageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obE-FD-5qR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-T8-sHO">
-                                <rect key="frame" x="67" y="780" width="280" height="65"/>
-                                <color key="backgroundColor" name="mainBlue"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="eeu-fW-Fhh"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="o9G-7B-eo2"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Alligator">
-                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="wordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1R-0m-8bh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Gh9-Fh-Kty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="19X-Ra-heC"/>
-                            <constraint firstItem="Kd7-0g-UgC" firstAttribute="top" secondItem="Gh9-Fh-Kty" secondAttribute="top" id="41q-4b-IsU"/>
                             <constraint firstItem="75q-AK-qMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KG1-kr-wIC"/>
-                            <constraint firstItem="5Cf-T8-sHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sme-WK-Gx3"/>
-                            <constraint firstItem="Kd7-0g-UgC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMq-JU-LxU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="75q-AK-qMh" secondAttribute="trailing" id="fMT-as-FFP"/>
-                            <constraint firstItem="5Cf-T8-sHO" firstAttribute="top" secondItem="Gh9-Fh-Kty" secondAttribute="bottom" constant="29" id="fOO-5N-PpO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="75q-AK-qMh" secondAttribute="bottom" constant="300" id="lBR-QF-arM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="75q-AK-qMh" secondAttribute="bottom" constant="-34" id="lBR-QF-arM"/>
                             <constraint firstItem="75q-AK-qMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tBs-6Y-VqB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Cf-T8-sHO" secondAttribute="bottom" constant="17" id="zmz-Iq-RVk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cViewMain" destination="75q-AK-qMh" id="NOD-ZP-2p2"/>
-                        <outlet property="wordButton" destination="5Cf-T8-sHO" id="JU9-lE-PPb"/>
-                        <outlet property="wordImage" destination="Gh9-Fh-Kty" id="MRB-7u-fBo"/>
-                        <outlet property="wordImageButton" destination="Kd7-0g-UgC" id="tXa-xs-lEg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,12 +135,6 @@
         <namedColor name="mainBlue">
             <color red="0.28600001335144043" green="0.42699998617172241" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="mainOrange">
-            <color red="0.9570000171661377" green="0.83099997043609619" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
