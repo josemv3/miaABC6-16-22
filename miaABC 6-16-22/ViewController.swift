@@ -27,8 +27,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let buttonImage2: [String] = ["j","k","l","m","n","o","p","q","r"]
     let wordImagePic: [String: String] = ["a": "alligator", "b": "boat", "c": "cat", "d": "dinosaur","e": "elephant", "f": "flower","g": "ghost","h": "hippo","i": "iceCream"]
     
-    
     let headerTitle: [String] = ["ABCDEFGHI", "JKLMNOPQR"]
+    var cellTitle = ""
+    
     
     let delegate = CollectionViewDelegate(numberOfItemsPerRow: 3, interItemSpacing: 10)
         
@@ -46,12 +47,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = cViewMain.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.backgroundColor = UIColor(named: "mainOrange")
         
-       
-        
         if indexPath.section == 0 {
             let image = UIImage(named: buttonImage[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage[indexPath.row]
+            cellTitle = cell.title
             wordImage.image = UIImage(named: "alligator")
             
             return cell
@@ -59,17 +59,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage2[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage2[indexPath.row]
+            cellTitle = cell.title
 
             return cell
         }
-        
-        
-        
     }
-    
-    
-    
-    
 
     
     //To populate HEADER with data
@@ -84,7 +78,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return HeaderView
     }
-
 
     @IBAction func wordButtonPressed(_ sender: UIButton) {
     }
