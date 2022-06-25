@@ -18,6 +18,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         cViewMain.delegate = delegate
+        cViewMain.decelerationRate = .fast
         cViewMain.layer.borderWidth = 1
         cViewMain.layer.borderColor = UIColor(named: "mainOrange")?.cgColor
         
@@ -78,6 +79,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return HeaderView
     }
+    
+    func snapToCenter() {
+        let centerPoint = view.convert(view.center, to: cViewMain)
+        guard let centerIndexPath = cViewMain.indexPathForItem(at: centerPoint) else { return }
+        cViewMain.scrollToItem(at: centerIndexPath, at: .centeredVertically, animated: true)
+        
+    }
 
     @IBAction func wordButtonPressed(_ sender: UIButton) {
     }
@@ -87,6 +95,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
 }
 
+
+
+
+extension ViewController : UIScrollViewDelegate {
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        snapToCenter()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            snapToCenter()
+        }
+    }
+    
+}
 
 
 
