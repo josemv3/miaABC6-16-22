@@ -81,6 +81,7 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alligator" translatesAutoresizingMaskIntoConstraints="NO" id="VeY-hU-14T">
                                             <rect key="frame" x="132" y="18" width="150" height="150"/>
+                                            <color key="backgroundColor" name="mainOrange"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-YS-SZ4">
                                             <rect key="frame" x="92" y="188" width="230" height="64"/>
@@ -134,6 +135,9 @@
         <image name="alligator" width="500" height="500"/>
         <namedColor name="mainBlue">
             <color red="0.28600001335144043" green="0.42699998617172241" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainOrange">
+            <color red="0.9570000171661377" green="0.83099997043609619" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

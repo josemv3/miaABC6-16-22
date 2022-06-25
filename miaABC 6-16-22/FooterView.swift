@@ -12,4 +12,7 @@ class FooterView: UICollectionReusableView {
     
     @IBOutlet weak var footerImage: UIImageView!
     @IBOutlet weak var footerButton: UIButton!
+    
+    
+    
 }
