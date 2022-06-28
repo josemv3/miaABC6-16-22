@@ -9,11 +9,9 @@ import UIKit
 
 class FooterView: UICollectionReusableView {
     static let reuseIdentifier = String(describing: FooterView.self)
-    static var animal: Animal?
+    static var sticker: InstructiveSticker?
     
-    @IBOutlet weak var footerImage: UIImageView!
+    @IBOutlet weak var footerImageView: UIImageView!
     @IBOutlet weak var footerButton: UIButton!
-    
-    
     
 }

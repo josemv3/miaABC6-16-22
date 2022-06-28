@@ -48,7 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage[indexPath.row]
-            cellTitle = cell.title
+//            cellTitle = cell.title
             //wordImage.image = UIImage(named: "alligator")
             
             return cell
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage2[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage2[indexPath.row]
-            cellTitle = cell.title
+//            cellTitle = cell.title
 
             return cell
         }
@@ -75,8 +75,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             //FooterView.headerLabel.text = headerTitle[indexPath.section]
             //HeaderView.headerLabel.text = "ABC"
              
-            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
-            FooterView.footerImage = UIImageView(image: image)
+//            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
+//            FooterView.footerImage = UIImageView(image: image)
             
             DispatchQueue.main.async { [weak self] in
                guard let self = self else { return }
