@@ -28,7 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let wordImagePic: [String: String] = ["a": "alligator", "b": "boat", "c": "cat", "d": "dinosaur","e": "elephant", "f": "flower","g": "ghost","h": "hippo","i": "iceCream"]
     
     let headerTitle: [String] = ["ABCDEFGHI", "JKLMNOPQR"]
-    var cellTitle = ""
+    static var cellTitle = ""
     
     
     let delegate = CollectionViewDelegate(numberOfItemsPerRow: 3, interItemSpacing: 10)
@@ -77,6 +77,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             FooterView.backgroundColor = .systemRed
             //FooterView.headerLabel.text = headerTitle[indexPath.section]
             //HeaderView.headerLabel.text = "ABC"
+            
             
             return FooterView
         }
