@@ -75,13 +75,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             //FooterView.headerLabel.text = headerTitle[indexPath.section]
             //HeaderView.headerLabel.text = "ABC"
              
-            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
-            FooterView.footerImage = UIImageView(image: image)
-            
-            DispatchQueue.main.async { [weak self] in
-               guard let self = self else { return }
-                self.cViewMain.reloadData()
-            }
+//            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
+//            FooterView.footerImage = UIImageView(image: image)
+//
+//            DispatchQueue.main.async { [weak self] in
+//               guard let self = self else { return }
+//                self.cViewMain.reloadData()
+//            }
             
             return FooterView
         }
