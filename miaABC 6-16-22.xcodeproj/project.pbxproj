@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CDF94D3286B47BB00D174E3 /* InstructiveStickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF94D2286B47BB00D174E3 /* InstructiveStickers.swift */; };
 		E021CC05285C45FA00BF43EA /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */; };
 		E021CC07285C468B00BF43EA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021CC06285C468B00BF43EA /* CollectionViewCell.swift */; };
 		E03D0923285C1EC200F05827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D0922285C1EC200F05827 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CDF94D2286B47BB00D174E3 /* InstructiveStickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructiveStickers.swift; sourceTree = "<group>"; };
 		E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 		E021CC06285C468B00BF43EA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E03D091F285C1EC200F05827 /* miaABC 6-16-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miaABC 6-16-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 				E021CC06285C468B00BF43EA /* CollectionViewCell.swift */,
 				E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */,
 				E0E40B972864206A00796B1B /* FooterView.swift */,
+				4CDF94D2286B47BB00D174E3 /* InstructiveStickers.swift */,
 				E03D0928285C1EC200F05827 /* Main.storyboard */,
 				E03D092E285C1EC300F05827 /* Assets.xcassets */,
 				E03D0930285C1EC300F05827 /* LaunchScreen.storyboard */,
@@ -277,6 +280,7 @@
 				E03D0923285C1EC200F05827 /* AppDelegate.swift in Sources */,
 				E021CC07285C468B00BF43EA /* CollectionViewCell.swift in Sources */,
 				E021CC05285C45FA00BF43EA /* CollectionViewDelegate.swift in Sources */,
+				4CDF94D3286B47BB00D174E3 /* InstructiveStickers.swift in Sources */,
 				E03D092D285C1EC200F05827 /* miaABC_6_16_22.xcdatamodeld in Sources */,
 				E0E40B982864206A00796B1B /* FooterView.swift in Sources */,
 				E03D0925285C1EC200F05827 /* SceneDelegate.swift in Sources */,

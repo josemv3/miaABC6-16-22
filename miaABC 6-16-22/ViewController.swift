@@ -25,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let wordImagePic: [String: String] = ["a": "alligator", "b": "boat", "c": "cat", "d": "dinosaur","e": "elephant", "f": "flower","g": "ghost","h": "hippo","i": "iceCream"]
     
     let headerTitle: [String] = ["ABCDEFGHI", "JKLMNOPQR"]
-    var cellTitle = ""
+    static var cellTitle = ""
     
     
     let delegate = CollectionViewDelegate(numberOfItemsPerRow: 3, interItemSpacing: 10)
@@ -48,7 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage[indexPath.row]
-            cellTitle = cell.title
+//            cellTitle = cell.title
             //wordImage.image = UIImage(named: "alligator")
             
             return cell
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage2[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage2[indexPath.row]
-            cellTitle = cell.title
+//            cellTitle = cell.title
 
             return cell
         }
@@ -82,6 +82,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //               guard let self = self else { return }
 //                self.cViewMain.reloadData()
 //            }
+            
             
             return FooterView
         }
