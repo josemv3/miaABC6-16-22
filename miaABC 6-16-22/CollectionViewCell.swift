@@ -14,13 +14,18 @@ class CollectionViewCell: UICollectionViewCell {
     var title = ""
   
     
-    @IBAction func letterButtonPressed(_ sender: UIButton) {
-        print(title)
-        
+//    @IBAction func letterButtonPressed(_ sender: UIButton) {
+//        print(title)
+//        
+//    
+//        
+//       
+//    
+//    }
     
-        
-       
-    
+    func set(_ sticker: Sticker) {
+        let image = UIImage(named: sticker.letterImageName)
+        cellButton.setImage(image, for: .normal)
     }
     
     

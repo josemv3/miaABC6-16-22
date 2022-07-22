@@ -15,6 +15,47 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var wordImageButton: UIButton!
     
     
+    
+    
+    let stickers = [
+        Sticker(letterImageName: "a", itemImageName: "airplane"),
+//        Sticker(letterImageName: "a", itemImageName: "apple"),
+//        Sticker(letterImageName: "a", itemImageName: "alligator"),
+//
+        Sticker(letterImageName: "b", itemImageName: "bat"),
+//        Sticker(letterImageName: "b", itemImageName: "bee"),
+//        Sticker(letterImageName: "b", itemImageName: "boat"),
+        
+        Sticker(letterImageName: "c", itemImageName: "cake"),
+//        Sticker(letterImageName: "c", itemImageName: "car"),
+//        Sticker(letterImageName: "c", itemImageName: "cat"),
+        
+        Sticker(letterImageName: "d", itemImageName: "dinosaur"),
+//        Sticker(letterImageName: "d", itemImageName: "dog"),
+//        Sticker(letterImageName: "d", itemImageName: "donut"),
+        
+        Sticker(letterImageName: "e", itemImageName: "eagle"),
+//        Sticker(letterImageName: "e", itemImageName: "eat"),
+//        Sticker(letterImageName: "e", itemImageName: "elephant"),
+        
+        Sticker(letterImageName: "f", itemImageName: "fish"),
+//        Sticker(letterImageName: "f", itemImageName: "frog"),
+//        Sticker(letterImageName: "f", itemImageName: "flower"),
+        
+        Sticker(letterImageName: "g", itemImageName: "garden"),
+//        Sticker(letterImageName: "g", itemImageName: "ghost"),
+//        Sticker(letterImageName: "g", itemImageName: "guitar"),
+//
+        Sticker(letterImageName: "h", itemImageName: "hammer"),
+//        Sticker(letterImageName: "h", itemImageName: "hippo"),
+//        Sticker(letterImageName: "h", itemImageName: "horse"),
+        
+        Sticker(letterImageName: "i", itemImageName: "iceCream"),
+//        Sticker(letterImageName: "i", itemImageName: "iceSkate"),
+//        Sticker(letterImageName: "i", itemImageName: "island"),
+    ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cViewMain.delegate = delegate
@@ -49,11 +90,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.backgroundColor = UIColor(named: "mainOrange")
         
         if indexPath.section == 0 {
-            let image = UIImage(named: buttonImage[indexPath.row])
-            cell.cellButton.setImage(image, for: .normal)
-            cell.title = buttonImage[indexPath.row]
-            cellTitle = cell.title
-            wordImage.image = UIImage(named: "alligator")
+//            let image = UIImage(named: buttonImage[indexPath.row])
+//            cell.cellButton.setImage(image, for: .normal)
+//            cell.title = buttonImage[indexPath.row]
+//            cellTitle = cell.title
+            cell.set(stickers[indexPath.row])
             
             return cell
         } else {

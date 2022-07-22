@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Sticker {
+    let letterImageName: String
+    let itemImageName: String
+}

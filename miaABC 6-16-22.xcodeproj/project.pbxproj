@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CCE1E4C2885E72100788D8C /* Stickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE1E4B2885E72100788D8C /* Stickers.swift */; };
 		E021CC05285C45FA00BF43EA /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */; };
 		E021CC07285C468B00BF43EA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021CC06285C468B00BF43EA /* CollectionViewCell.swift */; };
 		E03D0923285C1EC200F05827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D0922285C1EC200F05827 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CCE1E4B2885E72100788D8C /* Stickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stickers.swift; sourceTree = "<group>"; };
 		E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 		E021CC06285C468B00BF43EA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E03D091F285C1EC200F05827 /* miaABC 6-16-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miaABC 6-16-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				E021CC04285C45FA00BF43EA /* CollectionViewDelegate.swift */,
 				E021CC06285C468B00BF43EA /* CollectionViewCell.swift */,
 				E0AF4511285CDDBD006AF7C0 /* HeaderView.swift */,
+				4CCE1E4B2885E72100788D8C /* Stickers.swift */,
 				E03D0928285C1EC200F05827 /* Main.storyboard */,
 				E03D092E285C1EC300F05827 /* Assets.xcassets */,
 				E03D0930285C1EC300F05827 /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E03D0927285C1EC200F05827 /* ViewController.swift in Sources */,
+				4CCE1E4C2885E72100788D8C /* Stickers.swift in Sources */,
 				E03D0923285C1EC200F05827 /* AppDelegate.swift in Sources */,
 				E021CC07285C468B00BF43EA /* CollectionViewCell.swift in Sources */,
 				E021CC05285C45FA00BF43EA /* CollectionViewDelegate.swift in Sources */,
