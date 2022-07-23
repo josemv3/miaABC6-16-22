@@ -11,7 +11,17 @@ class FooterView: UICollectionReusableView {
     static let reuseIdentifier = String(describing: FooterView.self)
     static var sticker: InstructiveSticker?
     
+
+    
     @IBOutlet weak var footerImageView: UIImageView!
     @IBOutlet weak var footerButton: UIButton!
+    
+    
+//    func setImage() {
+//        footerImageView.image = UIImage(named: sticker!.imageName)
+//    }
+    
+    
+    
     
 }

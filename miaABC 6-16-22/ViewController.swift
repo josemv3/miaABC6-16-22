@@ -11,6 +11,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     @IBOutlet weak var cViewMain: UICollectionView!
         
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage[indexPath.row]
-//            cellTitle = cell.title
+            //cellTitle = cell.title
             //wordImage.image = UIImage(named: "alligator")
             
             return cell
@@ -56,14 +57,25 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let image = UIImage(named: buttonImage2[indexPath.row])
             cell.cellButton.setImage(image, for: .normal)
             cell.title = buttonImage2[indexPath.row]
-//            cellTitle = cell.title
+            //cellTitle = cell.title
 
             return cell
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell {
+            print(cell.title)
+            
+           }
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
 
     
-    //To populate HEADER with data
+    //To populate HEADER & FOOTER with data
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if kind == UICollectionView.elementKindSectionFooter {
@@ -71,9 +83,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             guard let FooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterView.reuseIdentifier, for: indexPath) as? FooterView else {
                 fatalError("HeaderView cannot be created")
             }
-            //FooterView.backgroundColor = .systemRed
-            //FooterView.headerLabel.text = headerTitle[indexPath.section]
-            //HeaderView.headerLabel.text = "ABC"
+            
+            FooterView.footerImageView.image = UIImage(named: "boat")
+            
+//            FooterView.backgroundColor = .systemRed
+//            FooterView.headerLabel.text = headerTitle[indexPath.section]
+//            HeaderView.headerLabel.text = "ABC"
              
 //            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
 //            FooterView.footerImage = UIImageView(image: image)
