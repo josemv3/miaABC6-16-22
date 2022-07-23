@@ -40,10 +40,10 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="centerY" secondItem="LFj-Av-lkU" secondAttribute="centerY" id="Dh3-Tw-uhL"/>
-                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="leading" secondItem="LFj-Av-lkU" secondAttribute="leading" id="QzN-Dh-qYc"/>
-                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="top" secondItem="LFj-Av-lkU" secondAttribute="top" id="cuc-rD-K2v"/>
-                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="centerX" secondItem="LFj-Av-lkU" secondAttribute="centerX" id="tSp-V1-0wH"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="top" secondItem="LFj-Av-lkU" secondAttribute="top" id="BqH-OE-cab"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="centerX" secondItem="LFj-Av-lkU" secondAttribute="centerX" id="dxW-Kp-4ii"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="centerY" secondItem="LFj-Av-lkU" secondAttribute="centerY" id="fHW-cp-zUD"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="leading" secondItem="LFj-Av-lkU" secondAttribute="leading" id="gZM-Hb-uaL"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>

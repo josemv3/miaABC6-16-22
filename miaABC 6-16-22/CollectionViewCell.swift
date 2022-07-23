@@ -12,36 +12,12 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var cellImageView: UIImageView!
     
     var title = ""
-    var stickerLetter = ""
     
   
     
-    func selectSticker(_ letter: String) -> InstructiveSticker {
-        var sticker: InstructiveSticker?
-        switch letter {
-        case "a":
-            sticker = InstructiveStickers.aStickers.randomElement()
-        case "b":
-            sticker = InstructiveStickers.bStickers.randomElement()
-        case "c":
-            sticker = InstructiveStickers.cStickers.randomElement()
-        case "d":
-            sticker = InstructiveStickers.dStickers.randomElement()
-        case "e":
-            sticker = InstructiveStickers.eStickers.randomElement()
-        case "f":
-            sticker = InstructiveStickers.fStickers.randomElement()
-        case "g":
-            sticker = InstructiveStickers.gStickers.randomElement()
-        case "h":
-            sticker = InstructiveStickers.hStickers.randomElement()
-        case "i":
-            sticker = InstructiveStickers.iStickers.randomElement()
-            
-        default:
-            print("oops")
-        }
-        return sticker!
+    func set(_ sticker: Sticker) {
+        let image = UIImage(named: sticker.letterImageName)
+        cellImageView.image = image
     }
     
     

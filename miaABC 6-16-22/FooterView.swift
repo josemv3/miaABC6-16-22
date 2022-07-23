@@ -9,7 +9,6 @@ import UIKit
 
 class FooterView: UICollectionReusableView {
     static let reuseIdentifier = String(describing: FooterView.self)
-    static var sticker: InstructiveSticker?
     
 
     
@@ -17,9 +16,11 @@ class FooterView: UICollectionReusableView {
     @IBOutlet weak var footerButton: UIButton!
     
     
-//    func setImage() {
-//        footerImageView.image = UIImage(named: sticker!.imageName)
-//    }
+    func set(_ sticker: Sticker) {
+        let image = UIImage(named: sticker.itemImageName)
+        footerImageView.image = image
+        footerButton.setTitle(sticker.itemImageName.capitalized, for: .normal)
+    }
     
     
     

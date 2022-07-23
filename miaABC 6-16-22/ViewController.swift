@@ -11,7 +11,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     @IBOutlet weak var cViewMain: UICollectionView!
         
-   
+    var footerView: FooterView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,44 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cViewMain.layer.borderColor = UIColor(named: "mainOrange")?.cgColor
         
     }
+    
+    let stickers = [
+            Sticker(letterImageName: "a", itemImageName: "airplane"),
+    //        Sticker(letterImageName: "a", itemImageName: "apple"),
+    //        Sticker(letterImageName: "a", itemImageName: "alligator"),
+    //
+            Sticker(letterImageName: "b", itemImageName: "bat"),
+    //        Sticker(letterImageName: "b", itemImageName: "bee"),
+    //        Sticker(letterImageName: "b", itemImageName: "boat"),
+            
+            Sticker(letterImageName: "c", itemImageName: "cake"),
+    //        Sticker(letterImageName: "c", itemImageName: "car"),
+    //        Sticker(letterImageName: "c", itemImageName: "cat"),
+            
+            Sticker(letterImageName: "d", itemImageName: "dinosaur"),
+    //        Sticker(letterImageName: "d", itemImageName: "dog"),
+    //        Sticker(letterImageName: "d", itemImageName: "donut"),
+            
+            Sticker(letterImageName: "e", itemImageName: "eagle"),
+    //        Sticker(letterImageName: "e", itemImageName: "eat"),
+    //        Sticker(letterImageName: "e", itemImageName: "elephant"),
+            
+            Sticker(letterImageName: "f", itemImageName: "fish"),
+    //        Sticker(letterImageName: "f", itemImageName: "frog"),
+    //        Sticker(letterImageName: "f", itemImageName: "flower"),
+            
+            Sticker(letterImageName: "g", itemImageName: "garden"),
+    //        Sticker(letterImageName: "g", itemImageName: "ghost"),
+    //        Sticker(letterImageName: "g", itemImageName: "guitar"),
+    //
+            Sticker(letterImageName: "h", itemImageName: "hammer"),
+    //        Sticker(letterImageName: "h", itemImageName: "hippo"),
+    //        Sticker(letterImageName: "h", itemImageName: "horse"),
+            
+            Sticker(letterImageName: "i", itemImageName: "iceCream"),
+    //        Sticker(letterImageName: "i", itemImageName: "iceSkate"),
+    //        Sticker(letterImageName: "i", itemImageName: "island"),
+        ]
     
     let buttonImage: [String] = ["a","b","c","d","e","f","g","h","i"]
     let buttonImage2: [String] = ["j","k","l","m","n","o","p","q","r"]
@@ -46,33 +84,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.backgroundColor = UIColor(named: "mainOrange")
         
         if indexPath.section == 0 {
-//            let image = UIImage(named: buttonImage[indexPath.row])
-//            cell.cellButton.setImage(image, for: .normal)
-//            cell.title = buttonImage[indexPath.row]
-            //cellTitle = cell.title
-            //wordImage.image = UIImage(named: "alligator")
-            
+            cell.set(stickers[indexPath.row])
             return cell
         } else {
-//            let image = UIImage(named: buttonImage2[indexPath.row])
-//            cell.cellButton.setImage(image, for: .normal)
-//            cell.title = buttonImage2[indexPath.row]
-            //cellTitle = cell.title
 
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell {
-            print(cell.title)
-            
-           }
+//        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell {
+//            print(cell.title)
+//
+//           }
+        footerView?.set(stickers[indexPath.row])
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
 
     
     //To populate HEADER & FOOTER with data
@@ -80,26 +106,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         if kind == UICollectionView.elementKindSectionFooter {
             
-            guard let FooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterView.reuseIdentifier, for: indexPath) as? FooterView else {
-                fatalError("HeaderView cannot be created")
-            }
+            footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterView.reuseIdentifier, for: indexPath) as? FooterView
             
-            FooterView.footerImageView.image = UIImage(named: "boat")
-            
-//            FooterView.backgroundColor = .systemRed
-//            FooterView.headerLabel.text = headerTitle[indexPath.section]
-//            HeaderView.headerLabel.text = "ABC"
-             
-//            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
-//            FooterView.footerImage = UIImageView(image: image)
-//
-//            DispatchQueue.main.async { [weak self] in
-//               guard let self = self else { return }
-//                self.cViewMain.reloadData()
+//            guard let FooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterView.reuseIdentifier, for: indexPath) as? FooterView else {
+//                fatalError("HeaderView cannot be created")
 //            }
+//
+//            FooterView.footerImageView.image = UIImage(named: "boat")
+//
+////            FooterView.backgroundColor = .systemRed
+////            FooterView.headerLabel.text = headerTitle[indexPath.section]
+////            HeaderView.headerLabel.text = "ABC"
+//
+////            let image = UIImage(named: wordImagePic[cellTitle] ?? "error")
+////            FooterView.footerImage = UIImageView(image: image)
+////
+////            DispatchQueue.main.async { [weak self] in
+////               guard let self = self else { return }
+////                self.cViewMain.reloadData()
+////            }
             
             
-            return FooterView
+            return footerView!
         }
         
         
