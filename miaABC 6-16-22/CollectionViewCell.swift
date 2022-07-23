@@ -8,20 +8,13 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-    
-    @IBOutlet weak var cellButton: UIButton!
+   
+    @IBOutlet var cellImageView: UIImageView!
     
     var title = ""
     var stickerLetter = ""
     
-    @IBAction func letterButtonPressed(_ sender: UIButton) {
-        FooterView.sticker = selectSticker(title)
-        
-        
-        //print(title)
-        print(FooterView.sticker?.imageName)
-    
-    }
+  
     
     func selectSticker(_ letter: String) -> InstructiveSticker {
         var sticker: InstructiveSticker?

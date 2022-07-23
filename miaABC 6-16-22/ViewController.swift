@@ -46,17 +46,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.backgroundColor = UIColor(named: "mainOrange")
         
         if indexPath.section == 0 {
-            let image = UIImage(named: buttonImage[indexPath.row])
-            cell.cellButton.setImage(image, for: .normal)
-            cell.title = buttonImage[indexPath.row]
+//            let image = UIImage(named: buttonImage[indexPath.row])
+//            cell.cellButton.setImage(image, for: .normal)
+//            cell.title = buttonImage[indexPath.row]
             //cellTitle = cell.title
             //wordImage.image = UIImage(named: "alligator")
             
             return cell
         } else {
-            let image = UIImage(named: buttonImage2[indexPath.row])
-            cell.cellButton.setImage(image, for: .normal)
-            cell.title = buttonImage2[indexPath.row]
+//            let image = UIImage(named: buttonImage2[indexPath.row])
+//            cell.cellButton.setImage(image, for: .normal)
+//            cell.title = buttonImage2[indexPath.row]
             //cellTitle = cell.title
 
             return cell

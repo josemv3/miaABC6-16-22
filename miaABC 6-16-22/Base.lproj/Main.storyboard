@@ -35,22 +35,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxk-2Y-YVR">
-                                                    <rect key="frame" x="2" y="7" width="124" height="114"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="a"/>
-                                                    <connections>
-                                                        <action selector="letterButtonPressed:" destination="YxB-QU-Vgs" eventType="touchUpInside" id="ij3-uf-MUJ"/>
-                                                    </connections>
-                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQK-PJ-0gJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Qxk-2Y-YVR" firstAttribute="centerX" secondItem="LFj-Av-lkU" secondAttribute="centerX" id="R3T-Lt-Dq6"/>
-                                                <constraint firstItem="Qxk-2Y-YVR" firstAttribute="centerY" secondItem="LFj-Av-lkU" secondAttribute="centerY" id="xUx-mR-yWh"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="centerY" secondItem="LFj-Av-lkU" secondAttribute="centerY" id="Dh3-Tw-uhL"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="leading" secondItem="LFj-Av-lkU" secondAttribute="leading" id="QzN-Dh-qYc"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="top" secondItem="LFj-Av-lkU" secondAttribute="top" id="cuc-rD-K2v"/>
+                                                <constraint firstItem="qQK-PJ-0gJ" firstAttribute="centerX" secondItem="LFj-Av-lkU" secondAttribute="centerX" id="tSp-V1-0wH"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="cellButton" destination="Qxk-2Y-YVR" id="sHP-A1-Aig"/>
+                                            <outlet property="cellImageView" destination="qQK-PJ-0gJ" id="xhN-i0-D3Z"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -131,7 +128,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="a" width="100" height="100"/>
         <namedColor name="mainBlue">
             <color red="0.28600001335144043" green="0.42699998617172241" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
